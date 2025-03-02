@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viral Shop Finder</title>
+    <title>Viral Shop Finder | Vídeos Virais do TikTok Shop</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -23,9 +23,9 @@
             <nav>
                 <ul>
                     <li><a href="#" class="active">Início</a></li>
-                    <li><a href="#tiktok-shop">TikTok Shop</a></li>
+                    <li><a href="#tiktok-videos">Vídeos</a></li>
                     <li><a href="#trending">Tendências</a></li>
-                    <li><a href="#categories">Categorias</a></li>
+                    <li><a href="#products">Produtos</a></li>
                     <li><a href="#about">Sobre</a></li>
                 </ul>
             </nav>
@@ -36,8 +36,8 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2>Descubra os Produtos Virais do TikTok Shop</h2>
-                    <p>Encontre os produtos mais populares e vídeos virais de vendas diretamente do TikTok Shop</p>
+                    <h2>Descubra os Vídeos Mais Virais do TikTok Shop</h2>
+                    <p>Os melhores produtos e vídeos que estão bombando no TikTok reunidos em um só lugar</p>
                     <div class="search-large">
                         <form id="heroSearchForm">
                             <input type="text" placeholder="Pesquise produtos, categorias ou hashtags...">
@@ -48,10 +48,10 @@
             </div>
         </section>
 
-        <section id="tiktok-shop" class="tiktok-shop-section">
+        <section id="tiktok-videos" class="tiktok-videos-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>TikTok Shop: Vídeos Mais Virais</h2>
+                    <h2>Vídeos Virais do TikTok Shop</h2>
                     <div class="filter-tabs">
                         <button class="filter-tab active" data-filter="all">Todos</button>
                         <button class="filter-tab" data-filter="beauty">Beleza</button>
@@ -62,7 +62,110 @@
                 </div>
                 
                 <div class="video-grid" id="videoGrid">
-                    <!-- Os vídeos serão inseridos aqui pelo JavaScript -->
+                    <!-- Os vídeos são inseridos pelo JavaScript, mas vamos incluir alguns exemplos estáticos -->
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/abc123" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta">
+                                <span class="video-category beauty">Beleza</span>
+                                <span class="video-views"><i class="fas fa-eye"></i> 5.2M</span>
+                            </div>
+                            <h3>Kit de escova facial que viralizou no TikTok</h3>
+                            <p class="video-description">A escova que todos estão usando para limpeza profunda da pele. Veja por que está fazendo tanto sucesso!</p>
+                            <div class="video-footer">
+                                <div class="creator-info">
+                                    <img src="/api/placeholder/40/40" alt="Creator" class="creator-avatar">
+                                    <span class="creator-name">@beauty_tips</span>
+                                </div>
+                                <div class="product-link">
+                                    <a href="#" class="shop-now-btn">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/def456" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta">
+                                <span class="video-category tech">Tecnologia</span>
+                                <span class="video-views"><i class="fas fa-eye"></i> 3.8M</span>
+                            </div>
+                            <h3>Carregador portátil ultra-rápido com 10.000mAh</h3>
+                            <p class="video-description">Carregue seu celular do zero a 50% em apenas 15 minutos. O carregador mais rápido do mercado!</p>
+                            <div class="video-footer">
+                                <div class="creator-info">
+                                    <img src="/api/placeholder/40/40" alt="Creator" class="creator-avatar">
+                                    <span class="creator-name">@tech_reviewer</span>
+                                </div>
+                                <div class="product-link">
+                                    <a href="#" class="shop-now-btn">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/ghi789" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta">
+                                <span class="video-category home">Casa</span>
+                                <span class="video-views"><i class="fas fa-eye"></i> 4.5M</span>
+                            </div>
+                            <h3>Organizador multifuncional para gavetas</h3>
+                            <p class="video-description">Transforme a bagunça em organização perfeita com este organizador ajustável. Ideal para qualquer gaveta!</p>
+                            <div class="video-footer">
+                                <div class="creator-info">
+                                    <img src="/api/placeholder/40/40" alt="Creator" class="creator-avatar">
+                                    <span class="creator-name">@home_organizer</span>
+                                </div>
+                                <div class="product-link">
+                                    <a href="#" class="shop-now-btn">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/jkl012" frameborder="0" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta">
+                                <span class="video-category fashion">Moda</span>
+                                <span class="video-views"><i class="fas fa-eye"></i> 6.7M</span>
+                            </div>
+                            <h3>Vestido conversível em 10 estilos diferentes</h3>
+                            <p class="video-description">Um vestido, 10 looks. Este vestido inovador pode ser transformado em diferentes estilos para qualquer ocasião.</p>
+                            <div class="video-footer">
+                                <div class="creator-info">
+                                    <img src="/api/placeholder/40/40" alt="Creator" class="creator-avatar">
+                                    <span class="creator-name">@fashion_trends</span>
+                                </div>
+                                <div class="product-link">
+                                    <a href="#" class="shop-now-btn">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="load-more">
@@ -71,52 +174,108 @@
             </div>
         </section>
 
-        <section id="trending" class="trending-section">
+        <section id="trending-products" class="trending-section">
             <div class="container">
-                <h2>Tendências da Semana</h2>
-                <div class="trending-grid" id="trendingGrid">
-                    <!-- As tendências serão inseridas aqui pelo JavaScript -->
+                <h2>Produtos Em Alta</h2>
+                <div class="product-slider" id="productSlider">
+                    <div class="product-card">
+                        <div class="product-badge">HOT</div>
+                        <img src="/api/placeholder/250/250" alt="Produto" class="product-image">
+                        <div class="product-info">
+                            <h3>Mini projetor portátil HD</h3>
+                            <div class="product-meta">
+                                <span class="product-price">R$ 299,90</span>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <p class="product-desc">Projetor compacto com bateria de longa duração e conectividade Bluetooth.</p>
+                            <a href="#" class="product-btn">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge sale">-30%</div>
+                        <img src="/api/placeholder/250/250" alt="Produto" class="product-image">
+                        <div class="product-info">
+                            <h3>Difusor de aromas ultrassônico</h3>
+                            <div class="product-meta">
+                                <span class="product-price">R$ 89,90</span>
+                                <span class="product-old-price">R$ 129,90</span>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <p class="product-desc">Difusor com luzes LED coloridas e temporizador para relaxamento total.</p>
+                            <a href="#" class="product-btn">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="/api/placeholder/250/250" alt="Produto" class="product-image">
+                        <div class="product-info">
+                            <h3>Tapete massageador para pés</h3>
+                            <div class="product-meta">
+                                <span class="product-price">R$ 159,90</span>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <p class="product-desc">Tapete reflexológico que alivia dores nos pés e melhora a circulação.</p>
+                            <a href="#" class="product-btn">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge">NEW</div>
+                        <img src="/api/placeholder/250/250" alt="Produto" class="product-image">
+                        <div class="product-info">
+                            <h3>Miniventilador recarregável de pescoço</h3>
+                            <div class="product-meta">
+                                <span class="product-price">R$ 79,90</span>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.5</span>
+                            </div>
+                            <p class="product-desc">Ventilador hands-free para uso no pescoço, ideal para dias quentes.</p>
+                            <a href="#" class="product-btn">Ver Detalhes</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="analytics" class="analytics-section">
+        <section id="popular-categories" class="categories-section">
             <div class="container">
-                <h2>Análise de Produtos Virais</h2>
-                <div class="stats-container">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
-                        <div class="stat-content">
-                            <h3>Categoria Mais Popular</h3>
-                            <p id="popularCategory">Beleza e Cuidados Pessoais</p>
-                            <div class="stat-progress">
-                                <div class="progress-bar" style="width: 78%"></div>
-                            </div>
-                            <p class="stat-percentage">78% dos vídeos virais</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-tags"></i></div>
-                        <div class="stat-content">
-                            <h3>Faixa de Preço Popular</h3>
-                            <p id="popularPrice">R$50 - R$150</p>
-                            <div class="stat-progress">
-                                <div class="progress-bar" style="width: 65%"></div>
-                            </div>
-                            <p class="stat-percentage">65% dos produtos vendidos</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-video"></i></div>
-                        <div class="stat-content">
-                            <h3>Duração Média dos Vídeos</h3>
-                            <p id="avgDuration">37 segundos</p>
-                            <div class="stat-progress">
-                                <div class="progress-bar" style="width: 92%"></div>
-                            </div>
-                            <p class="stat-percentage">92% taxa de retenção</p>
-                        </div>
-                    </div>
+                <h2>Categorias Populares</h2>
+                <div class="categories-grid">
+                    <a href="#" class="category-card beauty">
+                        <div class="category-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Beleza</h3>
+                        <span class="category-count">142 produtos</span>
+                    </a>
+                    
+                    <a href="#" class="category-card tech">
+                        <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Tecnologia</h3>
+                        <span class="category-count">98 produtos</span>
+                    </a>
+                    
+                    <a href="#" class="category-card home">
+                        <div class="category-icon"><i class="fas fa-home"></i></div>
+                        <h3>Casa</h3>
+                        <span class="category-count">115 produtos</span>
+                    </a>
+                    
+                    <a href="#" class="category-card fashion">
+                        <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+                        <h3>Moda</h3>
+                        <span class="category-count">87 produtos</span>
+                    </a>
+                    
+                    <a href="#" class="category-card fitness">
+                        <div class="category-icon"><i class="fas fa-dumbbell"></i></div>
+                        <h3>Fitness</h3>
+                        <span class="category-count">64 produtos</span>
+                    </a>
+                    
+                    <a href="#" class="category-card more">
+                        <div class="category-icon"><i class="fas fa-th"></i></div>
+                        <h3>Ver Todas</h3>
+                        <span class="category-count">500+ produtos</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -124,66 +283,5 @@
         <section id="newsletter" class="newsletter-section">
             <div class="container">
                 <div class="newsletter-content">
-                    <h2>Receba Novidades sobre Produtos Virais</h2>
-                    <p>Assine nossa newsletter e receba semanalmente uma curadoria dos melhores produtos e vídeos virais do TikTok Shop</p>
-                    <form id="newsletterForm">
-                        <input type="email" placeholder="Seu melhor e-mail" required>
-                        <button type="submit">Assinar</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Viral Shop Finder</h3>
-                    <p>Descubra os produtos mais virais do TikTok Shop e acompanhe as tendências de vendas em vídeos populares.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#">Página Inicial</a></li>
-                        <li><a href="#tiktok-shop">TikTok Shop</a></li>
-                        <li><a href="#trending">Tendências</a></li>
-                        <li><a href="#analytics">Análises</a></li>
-                        <li><a href="#newsletter">Newsletter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Categorias</h4>
-                    <ul>
-                        <li><a href="#">Beleza</a></li>
-                        <li><a href="#">Tecnologia</a></li>
-                        <li><a href="#">Casa</a></li>
-                        <li><a href="#">Moda</a></li>
-                        <li><a href="#">Saúde</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contato</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> contato@viralshopfinder.com</li>
-                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Viral Shop Finder. Todos os direitos reservados.</p>
-                <p><small>Este site não é afiliado ao TikTok ou ByteDance. TikTok é uma marca registrada da ByteDance Ltd.</small></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
-</html>
+                    <h2>Fique por dentro dos produtos virais</h2>
+                    <p>Assine nossa newsletter e receba em primeira mão os v
