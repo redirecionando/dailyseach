@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Meu Portal</h1>
+            </div>
+            <div class="search-container">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Pesquisar...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Entretenimento</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Viral</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-posts">
+            <h2>Destaques</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="/api/placeholder/400/250" alt="Imagem destaque">
+                    <div class="card-content">
+                        <span class="category">Entretenimento</span>
+                        <h3>Título do artigo em destaque aqui</h3>
+                        <p>Uma breve descrição do conteúdo do artigo para despertar interesse.</p>
+                        <span class="date">02 Mar 2025</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/api/placeholder/400/250" alt="Imagem destaque">
+                    <div class="card-content">
+                        <span class="category">Viral</span>
+                        <h3>Outro título interessante para artigo</h3>
+                        <p>Uma breve descrição do conteúdo do artigo para despertar interesse.</p>
+                        <span class="date">01 Mar 2025</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/api/placeholder/400/250" alt="Imagem destaque">
+                    <div class="card-content">
+                        <span class="category">Notícias</span>
+                        <h3>Mais um título para artigo relevante</h3>
+                        <p>Uma breve descrição do conteúdo do artigo para despertar interesse.</p>
+                        <span class="date">28 Fev 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-page" id="searchPage" style="display: none;">
+            <h2>Resultados da Pesquisa: <span id="searchQuery"></span></h2>
+            <div class="search-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Entretenimento">Entretenimento</button>
+                <button class="filter-btn" data-filter="Notícias">Notícias</button>
+                <button class="filter-btn" data-filter="Viral">Viral</button>
+            </div>
+            <div class="search-results-container" id="searchResultsContainer">
+                <!-- Resultados da pesquisa serão inseridos aqui -->
+            </div>
+            <div class="pagination" id="searchPagination">
+                <!-- Paginação será inserida aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Portal de Notícias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="search.js"></script>
+</body>
+</html>
