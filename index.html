@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portal de Notícias</title>
+    <title>Viral Shop Finder</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,84 +11,179 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Meu Portal</h1>
+                <h1>Viral Shop Finder</h1>
             </div>
             <div class="search-container">
                 <form id="searchForm">
-                    <input type="text" id="searchInput" placeholder="Pesquisar...">
+                    <input type="text" id="searchInput" placeholder="Procurar produtos ou vídeos virais...">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 <div id="searchResults" class="search-results"></div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Entretenimento</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Viral</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#tiktok-shop">TikTok Shop</a></li>
+                    <li><a href="#trending">Tendências</a></li>
+                    <li><a href="#categories">Categorias</a></li>
+                    <li><a href="#about">Sobre</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section class="featured-posts">
-            <h2>Destaques</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <img src="/api/placeholder/400/250" alt="Imagem destaque">
-                    <div class="card-content">
-                        <span class="category">Entretenimento</span>
-                        <h3>Título do artigo em destaque aqui</h3>
-                        <p>Uma breve descrição do conteúdo do artigo para despertar interesse.</p>
-                        <span class="date">02 Mar 2025</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/api/placeholder/400/250" alt="Imagem destaque">
-                    <div class="card-content">
-                        <span class="category">Viral</span>
-                        <h3>Outro título interessante para artigo</h3>
-                        <p>Uma breve descrição do conteúdo do artigo para despertar interesse.</p>
-                        <span class="date">01 Mar 2025</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/api/placeholder/400/250" alt="Imagem destaque">
-                    <div class="card-content">
-                        <span class="category">Notícias</span>
-                        <h3>Mais um título para artigo relevante</h3>
-                        <p>Uma breve descrição do conteúdo do artigo para despertar interesse.</p>
-                        <span class="date">28 Fev 2025</span>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Descubra os Produtos Virais do TikTok Shop</h2>
+                    <p>Encontre os produtos mais populares e vídeos virais de vendas diretamente do TikTok Shop</p>
+                    <div class="search-large">
+                        <form id="heroSearchForm">
+                            <input type="text" placeholder="Pesquise produtos, categorias ou hashtags...">
+                            <button type="submit">Buscar</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="search-page" id="searchPage" style="display: none;">
-            <h2>Resultados da Pesquisa: <span id="searchQuery"></span></h2>
-            <div class="search-filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="Entretenimento">Entretenimento</button>
-                <button class="filter-btn" data-filter="Notícias">Notícias</button>
-                <button class="filter-btn" data-filter="Viral">Viral</button>
+        <section id="tiktok-shop" class="tiktok-shop-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>TikTok Shop: Vídeos Mais Virais</h2>
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">Todos</button>
+                        <button class="filter-tab" data-filter="beauty">Beleza</button>
+                        <button class="filter-tab" data-filter="tech">Tecnologia</button>
+                        <button class="filter-tab" data-filter="home">Casa</button>
+                        <button class="filter-tab" data-filter="fashion">Moda</button>
+                    </div>
+                </div>
+                
+                <div class="video-grid" id="videoGrid">
+                    <!-- Os vídeos serão inseridos aqui pelo JavaScript -->
+                </div>
+                
+                <div class="load-more">
+                    <button id="loadMoreBtn">Carregar Mais</button>
+                </div>
             </div>
-            <div class="search-results-container" id="searchResultsContainer">
-                <!-- Resultados da pesquisa serão inseridos aqui -->
+        </section>
+
+        <section id="trending" class="trending-section">
+            <div class="container">
+                <h2>Tendências da Semana</h2>
+                <div class="trending-grid" id="trendingGrid">
+                    <!-- As tendências serão inseridas aqui pelo JavaScript -->
+                </div>
             </div>
-            <div class="pagination" id="searchPagination">
-                <!-- Paginação será inserida aqui -->
+        </section>
+
+        <section id="analytics" class="analytics-section">
+            <div class="container">
+                <h2>Análise de Produtos Virais</h2>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-content">
+                            <h3>Categoria Mais Popular</h3>
+                            <p id="popularCategory">Beleza e Cuidados Pessoais</p>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 78%"></div>
+                            </div>
+                            <p class="stat-percentage">78% dos vídeos virais</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-tags"></i></div>
+                        <div class="stat-content">
+                            <h3>Faixa de Preço Popular</h3>
+                            <p id="popularPrice">R$50 - R$150</p>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                            <p class="stat-percentage">65% dos produtos vendidos</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-video"></i></div>
+                        <div class="stat-content">
+                            <h3>Duração Média dos Vídeos</h3>
+                            <p id="avgDuration">37 segundos</p>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 92%"></div>
+                            </div>
+                            <p class="stat-percentage">92% taxa de retenção</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Receba Novidades sobre Produtos Virais</h2>
+                    <p>Assine nossa newsletter e receba semanalmente uma curadoria dos melhores produtos e vídeos virais do TikTok Shop</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                        <button type="submit">Assinar</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Meu Portal de Notícias. Todos os direitos reservados.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Viral Shop Finder</h3>
+                    <p>Descubra os produtos mais virais do TikTok Shop e acompanhe as tendências de vendas em vídeos populares.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#">Página Inicial</a></li>
+                        <li><a href="#tiktok-shop">TikTok Shop</a></li>
+                        <li><a href="#trending">Tendências</a></li>
+                        <li><a href="#analytics">Análises</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Beleza</a></li>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Casa</a></li>
+                        <li><a href="#">Moda</a></li>
+                        <li><a href="#">Saúde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contato@viralshopfinder.com</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Viral Shop Finder. Todos os direitos reservados.</p>
+                <p><small>Este site não é afiliado ao TikTok ou ByteDance. TikTok é uma marca registrada da ByteDance Ltd.</small></p>
+            </div>
         </div>
     </footer>
 
-    <script src="search.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
